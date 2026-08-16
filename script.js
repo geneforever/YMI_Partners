@@ -327,6 +327,7 @@
     setText("[data-contact-description]", content.contact.description);
     setText("[data-contact-form-title]", content.contact.formTitle);
     setText("[data-contact-form-description]", content.contact.formDescription);
+    setText("[data-contact-form-notice]", content.contact.formNotice);
 
     const form = $("[data-contact-form]");
     if (form) {

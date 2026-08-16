@@ -293,8 +293,9 @@ window.siteContent = {
     description: "부동산과 기업 사업에 관한 고민이 있으신가요? YMI Partners가 고객의 상황에 맞는 방향과 실행 방법을 함께 찾겠습니다.",
     formTitle: "상담 요청",
     formDescription: "내용을 작성하고 보내기를 누르면 FormSubmit 접수 화면으로 이동합니다.",
+    formNotice: "상담 내용을 보내면 확인 화면이 나타날 수 있습니다. 화면에 ‘로봇이 아닙니다’가 표시되면 해당 항목을 클릭해 주세요. 확인이 끝나면 상담 내용이 정상적으로 접수됩니다.",
     phone: "02-6956-6267",
-    email: "geneforever001@gmail.com",
+    email: "ymipartners@gmail.com",
     address: "05718 서울시 송파구 송파대로28길 24\n밀리오네Ⅱ 오피스텔 11층 1103호"
   }
 };
