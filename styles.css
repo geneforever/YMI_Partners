@@ -98,9 +98,11 @@ h3 { line-height: 1.3; letter-spacing: -.035em; }
 .proof-item { padding-right: 12px; border-right: 1px solid rgba(255,255,255,.3); color: #b6c1c9; font-size: .83rem; }
 .proof-item:last-child { padding-right: 0; border-right: 0; }
 .hero-visual { position: relative; min-height: 515px; overflow: hidden; border-radius: 26px; box-shadow: var(--shadow); background: #2d4851; }
-.hero-visual::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16,25,35,.03), rgba(16,25,35,.62)); }
-.hero-visual img { width: 100%; height: 100%; min-height: 515px; object-fit: cover; }
-.hero-visual-caption { position: absolute; right: 28px; bottom: 24px; z-index: 1; color: #fff; font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
+.hero-visual::after { content: ""; position: absolute; inset: 0; z-index: 2; background: linear-gradient(180deg, rgba(16,25,35,.03), rgba(16,25,35,.62)); pointer-events: none; }
+.hero-visual img, .hero-visual video { position: absolute; inset: 0; width: 100%; height: 100%; min-height: 515px; object-fit: cover; }
+.hero-visual img { z-index: 0; }
+.hero-visual video { z-index: 1; background: #2d4851; }
+.hero-visual-caption { position: absolute; right: 28px; bottom: 24px; z-index: 3; color: #fff; font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
 
 .section-heading { max-width: 690px; margin-bottom: 50px; }
 .section-heading > p:last-child { margin-bottom: 0; color: var(--muted); }
@@ -200,7 +202,7 @@ h3 { line-height: 1.3; letter-spacing: -.035em; }
 @media (max-width: 1199px) {
   :root { --header-height: 72px; }
   .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(300px, .8fr); gap: 40px; }
-  .hero-visual, .hero-visual img { min-height: 460px; }
+  .hero-visual, .hero-visual img, .hero-visual video { min-height: 460px; }
   .services-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
   .partner-list { grid-template-columns: repeat(3, 1fr); }
   .contact-grid { gap: 45px; }
@@ -229,7 +231,7 @@ h3 { line-height: 1.3; letter-spacing: -.035em; }
   h2 { font-size: clamp(2rem, 10vw, 3rem); }
   .hero-description { font-size: .98rem; }
   .hero-proof { margin-top: 38px; }
-  .hero-visual, .hero-visual img { min-height: 340px; }
+  .hero-visual, .hero-visual img, .hero-visual video { min-height: 340px; }
   .services-grid, .projects-grid, .highlight-list, .form-grid { grid-template-columns: 1fr; }
   .about-grid { gap: 34px; }
   .portrait-wrap { max-width: none; }

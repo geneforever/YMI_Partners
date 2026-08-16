@@ -79,6 +79,20 @@
       image.alt = content.hero.imageAlt || "";
     }
 
+    const video = $("[data-hero-video]");
+    const videoSource = $("[data-hero-video-source]");
+    if (video && videoSource && content.hero.video) {
+      videoSource.src = content.hero.video;
+      video.poster = content.hero.image || "";
+      video.setAttribute("aria-label", content.hero.videoAlt || "YMI Partners 소개 영상");
+      video.addEventListener("error", () => {
+        video.hidden = true;
+      });
+      video.load();
+    } else if (video) {
+      video.hidden = true;
+    }
+
     const proof = $("[data-hero-proof]");
     content.hero.proof.forEach((item) => {
       proof.appendChild(createElement("span", "proof-item", item));

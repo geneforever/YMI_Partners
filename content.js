@@ -33,6 +33,8 @@ window.siteContent = {
     primaryCta: "전문가에게 의뢰하기",
     secondaryCta: "전문 분야 살펴보기",
     proof: ["다년간의 현장 경험", "맞춤형 솔루션", "사업 전 과정 자문"],
+    video: "assets/ymi-partners-intro.mp4",
+    videoAlt: "YMI Partners 소개 영상",
     image: "https://ymipartners.co.kr/_assets/media/d289df704ad7e7f9d3272140e305199c.jpg",
     imageAlt: "도시 전경",
     imageCaption: "Trust · Strategy · Partnership"
