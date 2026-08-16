@@ -105,6 +105,28 @@
     const label = $("[data-hero-sound-label]");
     if (!video || !toggle) return;
 
+    let audioContext;
+    let audioGain;
+
+    const prepareAudioBoost = async () => {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return;
+
+      try {
+        if (!audioContext) {
+          audioContext = new AudioContextClass();
+          const source = audioContext.createMediaElementSource(video);
+          audioGain = audioContext.createGain();
+          audioGain.gain.value = 1.8;
+          source.connect(audioGain).connect(audioContext.destination);
+        }
+        if (audioContext.state === "suspended") await audioContext.resume();
+      } catch (error) {
+        audioContext = null;
+        audioGain = null;
+      }
+    };
+
     const updateLabel = () => {
       const muted = video.muted;
       toggle.setAttribute("aria-pressed", String(!muted));
@@ -114,6 +136,8 @@
     toggle.addEventListener("click", async () => {
       video.muted = !video.muted;
       if (!video.muted) {
+        video.volume = 1;
+        await prepareAudioBoost();
         try {
           await video.play();
         } catch (error) {
