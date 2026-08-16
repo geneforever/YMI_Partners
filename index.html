@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="YMI Partners 홈페이지 뼈대. 부동산·기업 자문과 프로젝트 사례를 소개합니다."
+    />
+    <title>YMI Partners</title>
+    <link rel="stylesheet" href="styles.css?v=20260816-9" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+    <header class="site-header" data-site-header>
+      <div class="container header-inner">
+        <a class="brand" href="#home" data-brand-link aria-label="YMI Partners 홈">
+          <img class="brand-logo" data-brand-logo src="" alt="" />
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          data-menu-toggle
+        >
+          <span class="sr-only">메뉴 열기</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="주요 메뉴" data-primary-nav>
+          <ul data-nav-list></ul>
+          <a class="header-cta" href="#contact" data-header-cta>상담 요청하기</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-dark" id="home" data-section="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-hero-eyebrow></p>
+            <h1 data-hero-title></h1>
+            <p class="hero-description" data-hero-description></p>
+            <div class="button-row">
+              <a class="button button-primary" href="#contact" data-hero-primary></a>
+              <a class="button button-ghost" href="#services" data-hero-secondary></a>
+            </div>
+            <div class="hero-proof" data-hero-proof></div>
+          </div>
+
+          <div class="hero-visual">
+            <img data-hero-image src="" alt="" loading="eager" />
+            <div class="hero-visual-caption" data-hero-image-caption></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="services" data-section="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-services-eyebrow></p>
+            <h2 data-services-title></h2>
+            <p data-services-description></p>
+          </div>
+          <div class="card-grid services-grid" data-services-grid></div>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="about" data-section="about">
+        <div class="container about-grid">
+          <div class="portrait-wrap">
+            <img class="portrait" data-about-image src="" alt="" loading="lazy" />
+            <div class="portrait-label" data-about-image-caption></div>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow" data-about-eyebrow></p>
+            <h2 data-about-title></h2>
+            <p class="about-role" data-about-role></p>
+            <p class="lead" data-about-description></p>
+            <div class="highlight-list" data-about-highlights></div>
+            <details class="details-panel">
+              <summary data-about-details-label>자세히 보기</summary>
+              <div data-about-details></div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="projects" data-section="projects">
+        <div class="container">
+          <div class="section-heading section-heading-light">
+            <p class="eyebrow" data-projects-eyebrow></p>
+            <h2 data-projects-title></h2>
+            <p data-projects-description></p>
+          </div>
+          <div class="card-grid projects-grid" data-projects-grid></div>
+        </div>
+      </section>
+
+      <section class="section section-tint members-section" id="members" data-section="members">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-members-eyebrow></p>
+            <h2 data-members-title></h2>
+            <p data-members-description></p>
+          </div>
+          <div class="member-window" data-member-window></div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="partners" data-section="partners">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-partners-eyebrow></p>
+            <h2 data-partners-title></h2>
+            <p data-partners-description></p>
+          </div>
+          <div class="partner-logo-window">
+            <div class="partner-window-heading">
+              <p class="eyebrow">NETWORK</p>
+              <h3 data-partner-window-title></h3>
+            </div>
+            <div class="partner-list" data-partner-list></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="press" data-section="press">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-press-eyebrow></p>
+            <h2 data-press-title></h2>
+            <p data-press-description></p>
+          </div>
+          <div class="press-list" data-press-list></div>
+        </div>
+      </section>
+
+      <section class="section contact-section section-dark" id="contact" data-section="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow" data-contact-eyebrow></p>
+            <h2 data-contact-title></h2>
+            <p class="lead" data-contact-description></p>
+            <div class="contact-info" data-contact-info></div>
+          </div>
+
+          <form class="contact-form" id="contact-form" data-contact-form>
+            <div class="form-heading">
+              <h3 data-contact-form-title></h3>
+              <p data-contact-form-description></p>
+            </div>
+            <div class="form-grid">
+              <label>
+                <span>문의 분야</span>
+                <select name="category" required>
+                  <option value="">서비스를 선택해 주세요</option>
+                  <option>부동산 자문</option>
+                  <option>금융 자문</option>
+                  <option>M&amp;A·투자 자문</option>
+                  <option>기타 문의</option>
+                </select>
+              </label>
+              <label>
+                <span>이름 또는 회사명</span>
+                <input type="text" name="name" placeholder="이름 또는 회사명" required />
+              </label>
+              <label>
+                <span>연락처</span>
+                <input type="tel" name="phone" placeholder="전화번호 또는 이메일" required />
+              </label>
+              <label class="full-width">
+                <span>문의 내용</span>
+                <textarea name="message" rows="5" placeholder="문의 내용을 간단히 적어 주세요" required></textarea>
+              </label>
+            </div>
+            <input type="hidden" name="_subject" value="YMI Partners 상담 문의" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_url" data-form-url value="https://www.ymipartners.co.kr/" />
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="form-honey" />
+            <button class="button button-primary button-wide" type="submit" data-form-preview>상담 문의 보내기</button>
+            <p class="form-status" data-form-status aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span data-footer-company></span>
+        <span data-footer-copyright></span>
+      </div>
+    </footer>
+
+    <script src="content.js?v=20260816-9"></script>
+    <script src="script.js?v=20260816-8"></script>
+  </body>
+</html>
