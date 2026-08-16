@@ -99,6 +99,34 @@
     });
   }
 
+  function setupHeroVideo() {
+    const video = $("[data-hero-video]");
+    const toggle = $("[data-hero-sound]");
+    const label = $("[data-hero-sound-label]");
+    if (!video || !toggle) return;
+
+    const updateLabel = () => {
+      const muted = video.muted;
+      toggle.setAttribute("aria-pressed", String(!muted));
+      if (label) label.textContent = muted ? "소리 켜고 재생" : "소리 끄기";
+    };
+
+    toggle.addEventListener("click", async () => {
+      video.muted = !video.muted;
+      if (!video.muted) {
+        try {
+          await video.play();
+        } catch (error) {
+          video.muted = true;
+        }
+      }
+      updateLabel();
+    });
+
+    video.addEventListener("volumechange", updateLabel);
+    updateLabel();
+  }
+
   function renderServices() {
     setText("[data-services-eyebrow]", content.services.eyebrow);
     setText("[data-services-title]", content.services.title);
@@ -438,6 +466,7 @@
   renderSiteMeta();
   renderNavigation();
   renderHero();
+  setupHeroVideo();
   renderServices();
   renderAbout();
   renderProjects();
