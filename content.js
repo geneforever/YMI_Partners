@@ -295,6 +295,6 @@ window.siteContent = {
     formDescription: "내용을 작성하고 보내기를 누르면 FormSubmit 접수 화면으로 이동합니다.",
     phone: "02-6956-6267",
     email: "geneforever001@gmail.com",
-    address: "서울시 송파구 송파대로 28길 20 세화빌딩 10층 1005호"
+    address: "05718 서울시 송파구 송파대로28길 24\n밀리오네Ⅱ 오피스텔 11층 1103호"
   }
 };

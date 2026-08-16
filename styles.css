@@ -183,6 +183,7 @@ h3 { line-height: 1.3; letter-spacing: -.035em; }
 .contact-info { display: grid; grid-template-columns: auto 1fr; gap: 8px 18px; margin-top: 40px; }
 .contact-label { color: #72d2d4; font-size: .7rem; font-weight: 800; letter-spacing: .12em; }
 .contact-link, .contact-address { color: #fff; }
+.contact-address { white-space: pre-line; }
 .contact-link:hover { color: #72d2d4; }
 .contact-form { padding: 32px; background: #fff; color: var(--ink); box-shadow: var(--shadow); }
 .form-heading h3 { margin-bottom: 6px; font-size: 1.6rem; }
