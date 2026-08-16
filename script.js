@@ -109,6 +109,7 @@
     let audioGain;
 
     const prepareAudioBoost = async () => {
+      if (!window.matchMedia("(max-width: 767px)").matches) return;
       const AudioContextClass = window.AudioContext || window.webkitAudioContext;
       if (!AudioContextClass) return;
 
@@ -130,24 +131,28 @@
     const updateLabel = () => {
       const muted = video.muted;
       toggle.setAttribute("aria-pressed", String(!muted));
-      if (label) label.textContent = muted ? "소리 켜고 재생" : "소리 끄기";
+      if (label) label.textContent = video.paused ? "소리 켜고 재생" : muted ? "소리 켜기" : "소리 끄기";
     };
 
     toggle.addEventListener("click", async () => {
-      video.muted = !video.muted;
-      if (!video.muted) {
+      if (video.paused) {
+        video.muted = false;
         video.volume = 1;
         await prepareAudioBoost();
         try {
           await video.play();
         } catch (error) {
-          video.muted = true;
+          if (label) label.textContent = "아래 재생 버튼을 눌러주세요";
         }
+      } else {
+        video.muted = !video.muted;
       }
       updateLabel();
     });
 
     video.addEventListener("volumechange", updateLabel);
+    video.addEventListener("play", updateLabel);
+    video.addEventListener("pause", updateLabel);
     updateLabel();
   }
 
