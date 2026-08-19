@@ -336,7 +336,7 @@
       const formUrl = $("[data-form-url]", form);
       if (formUrl) formUrl.value = content.site.formUrl || "https://www.ymipartners.co.kr/";
       const formNext = $("[data-form-next]", form);
-      if (formNext) formNext.value = content.site.formUrl || "https://www.ymipartners.co.kr/";
+      if (formNext) formNext.value = content.site.formThanksUrl || content.site.formUrl || "https://www.ymipartners.co.kr/";
     }
 
     const contactInfo = $("[data-contact-info]");

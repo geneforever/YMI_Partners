@@ -11,6 +11,7 @@ window.siteContent = {
     logoAlt: "YMI Partners 로고",
     wordmark: "Partners",
     formUrl: "https://www.ymipartners.co.kr/",
+    formThanksUrl: "https://www.ymipartners.co.kr/thanks.html",
     description: "YMI Partners는 다년간의 현장 노하우와 수준 높은 전문성을 바탕으로 고객 중심의 사업 가치를 만들어가는 전문 컨설팅 기업입니다.",
     footerCompany: "YMI Partners Co., Ltd.",
     footerCopyright: "© YMI Partners. All rights reserved."
@@ -293,7 +294,7 @@ window.siteContent = {
     description: "부동산과 기업 사업에 관한 고민이 있으신가요? YMI Partners가 고객의 상황에 맞는 방향과 실행 방법을 함께 찾겠습니다.",
     formTitle: "상담 요청",
     formDescription: "내용을 작성하고 보내기를 누르면 FormSubmit 접수 화면으로 이동합니다.",
-    formNotice: "처음 상담을 보내면 수신 이메일로 FormSubmit 인증 메일이 발송됩니다. 메일 안의 ‘Activate Form’을 한 번 눌러 주세요. 이후 접수 화면에 ‘로봇이 아닙니다’가 나타나면 해당 항목을 클릭하면 상담이 정상적으로 접수됩니다.",
+    formNotice: "상담 내용을 보내면 ‘로봇이 아닙니다’ 확인 화면이 나타날 수 있습니다. 해당 항목을 클릭하면 접수가 완료되고, ‘전송 되었습니다’ 안내 후 홈페이지로 자동 이동합니다.",
     phone: "02-6956-6267",
     email: "ymipartners@gmail.com",
     address: "05718 서울시 송파구 송파대로28길 24\n밀리오네Ⅱ 오피스텔 11층 1103호"
