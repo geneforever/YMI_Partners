@@ -316,6 +316,13 @@
       const summary = createElement("summary", "press-title", item.title);
       const description = createElement("p", "press-description", item.description);
       details.append(summary, description);
+      if (Array.isArray(item.body) && item.body.length) {
+        const body = createElement("div", "press-body");
+        item.body.forEach((paragraph) => {
+          body.appendChild(createElement("p", "press-body-paragraph", paragraph));
+        });
+        details.appendChild(body);
+      }
       copy.append(createElement("time", "press-date", item.date), details);
       article.append(number, copy, createElement("span", "press-arrow", "＋"));
       list.appendChild(article);
