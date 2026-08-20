@@ -312,6 +312,7 @@
       const number = createElement("span", "press-number", String(index + 1).padStart(2, "0"));
       const copy = createElement("div", "press-copy");
       const details = createElement("details", "press-details");
+      details.open = true;
       const summary = createElement("summary", "press-title", item.title);
       const description = createElement("p", "press-description", item.description);
       details.append(summary, description);
