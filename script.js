@@ -311,12 +311,12 @@
       const article = createElement("article", "press-item");
       const number = createElement("span", "press-number", String(index + 1).padStart(2, "0"));
       const copy = createElement("div", "press-copy");
-      copy.append(
-        createElement("time", "press-date", item.date),
-        createElement("h3", "press-title", item.title),
-        createElement("p", "press-description", item.description)
-      );
-      article.append(number, copy, createElement("span", "press-arrow", "↗"));
+      const details = createElement("details", "press-details");
+      const summary = createElement("summary", "press-title", item.title);
+      const description = createElement("p", "press-description", item.description);
+      details.append(summary, description);
+      copy.append(createElement("time", "press-date", item.date), details);
+      article.append(number, copy, createElement("span", "press-arrow", "＋"));
       list.appendChild(article);
     });
   }

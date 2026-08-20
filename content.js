@@ -268,7 +268,7 @@ window.siteContent = {
   press: {
     eyebrow: "NEWSROOM",
     title: "YMI의 새로운 소식",
-    description: "YMI Partners의 업무협약과 기업 활동 소식을 소개합니다.",
+    description: "YMI Partners의 업무협약과 기업 활동 소식을 소개합니다. 제목을 누르면 내용을 확인할 수 있습니다.",
     items: [
       {
         date: "2025. 04. 02",

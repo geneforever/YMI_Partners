@@ -171,12 +171,17 @@ h3 { line-height: 1.3; letter-spacing: -.035em; }
 .member-detail-item { padding-left: 3px; font-size: 1.06rem; line-height: 1.65; }
 
 .press-list { border-top: 1px solid var(--line); }
-.press-item { display: grid; grid-template-columns: 70px 1fr auto; gap: 24px; align-items: center; padding: 25px 0; border-bottom: 1px solid var(--line); }
+.press-item { display: grid; grid-template-columns: 70px 1fr auto; gap: 24px; align-items: start; padding: 25px 0; border-bottom: 1px solid var(--line); }
 .press-number { color: var(--teal); font-size: 1.2rem; font-weight: 800; }
 .press-date { display: block; margin-bottom: 5px; color: var(--muted); font-size: .78rem; }
-.press-title { margin-bottom: 4px; font-size: 1.18rem; }
-.press-description { margin: 0; color: var(--muted); }
-.press-arrow { color: var(--teal); font-size: 1.5rem; }
+.press-details { margin: 0; }
+.press-title { display: block; position: relative; margin: 0; padding: 0 34px 4px 0; color: var(--ink); font-size: 1.18rem; font-weight: 800; line-height: 1.45; cursor: pointer; }
+.press-title::-webkit-details-marker { display: none; }
+.press-title::after { content: "＋"; position: absolute; top: 0; right: 0; color: var(--teal); font-size: 1.25rem; font-weight: 500; line-height: 1.2; }
+.press-details[open] .press-title::after { content: "−"; }
+.press-description { margin: 12px 0 0; padding: 13px 0 0; border-top: 1px solid var(--line); color: var(--muted); line-height: 1.65; }
+.press-arrow { padding-top: 1px; color: var(--teal); font-size: 1.5rem; line-height: 1; transition: transform .25s ease; }
+.press-item:has(.press-details[open]) .press-arrow { transform: rotate(45deg); }
 
 .contact-section { position: relative; overflow: hidden; }
 .contact-section::before { content: "YMI"; position: absolute; right: -20px; bottom: -80px; color: rgba(255,255,255,.035); font-size: 20rem; font-weight: 900; line-height: 1; }
