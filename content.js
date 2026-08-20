@@ -194,7 +194,7 @@ window.siteContent = {
         image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=82"
       },
       {
-        category: "금융·기업 회생",
+        category: "금융자문",
         title: "금융기관 매칭",
         description: "AP펀딩, 플러스플랫폼, 감정평가법인 세종 금융주선 자문과 애너캠프, 바이오뱅크힐링, 유천양행 등",
         image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=82"
