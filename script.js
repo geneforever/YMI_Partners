@@ -318,9 +318,28 @@
       details.append(summary, description);
       if (Array.isArray(item.body) && item.body.length) {
         const body = createElement("div", "press-body");
+        if (item.image) {
+          const figure = createElement("figure", "press-figure");
+          const image = createElement("img", "press-image");
+          image.src = item.image;
+          image.alt = item.imageAlt || item.title;
+          image.loading = "lazy";
+          figure.appendChild(image);
+          if (item.imageCaption) {
+            figure.appendChild(createElement("figcaption", "press-image-caption", item.imageCaption));
+          }
+          body.appendChild(figure);
+        }
         item.body.forEach((paragraph) => {
           body.appendChild(createElement("p", "press-body-paragraph", paragraph));
         });
+        if (item.source && item.source.url) {
+          const source = createElement("a", "press-source", item.source.label || "원문 보기");
+          source.href = item.source.url;
+          source.target = "_blank";
+          source.rel = "noopener noreferrer";
+          body.appendChild(source);
+        }
         details.appendChild(body);
       }
       copy.append(createElement("time", "press-date", item.date), details);
