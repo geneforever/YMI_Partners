@@ -291,6 +291,10 @@ window.siteContent = {
         description: "감정평가세종·플러스플랫폼·YMI파트너스 업무협약",
         image: "assets/press-mou.png",
         imageAlt: "감정평가세종, 플러스플랫폼, YMI Partners 관계자들이 업무협약서를 들고 있는 모습",
+        source: {
+          label: "대한경제 원문 보기",
+          url: "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202506051108441180880"
+        },
         body: [
           "감정평가법인과 금융 플랫폼기업, 부동산 개발 특화 자문사가 침체기인 부동산개발사업의 돌파구를 마련하고 새로운 성장동력을 확보하기 위해 협력에 나섰습니다.",
           "감정평가법인 세종, 플러스플랫폼, YMI Partners 3사는 2025년 5월 27일 양해각서(MOU)를 체결했습니다.",
