@@ -6,7 +6,9 @@
 image: "assets/파일명.jpg"
 ```
 
-현재 화면은 기존 YMI Partners 공개 사이트의 이미지를 임시로 사용합니다. 이미지 교체 시 HTML과 CSS는 수정하지 않아도 됩니다.
+현재 화면은 필요한 이미지를 `assets` 폴더에서 직접 불러옵니다. 이미지 교체 시 HTML과 CSS는 수정하지 않아도 됩니다.
+
+`representative-lee.jpg`는 대표이사 이영목님의 프로필 사진입니다. 사진을 교체할 때는 같은 파일명으로 바꾸거나 `content.js`의 `about.image` 경로만 수정하면 됩니다.
 
 `member-shin.jpg`는 Members 프로필 창에 연결된 신동기 프로필 사진입니다. 사진을 교체할 때는 같은 파일명으로 바꾸거나 `content.js`의 `members.items[0].image` 경로만 수정하면 됩니다.
 

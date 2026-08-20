@@ -90,7 +90,7 @@ window.siteContent = {
     title: "이영목 대표이사",
     role: "YMI Partners(주) 대표이사",
     description: "YMI Partners는 부동산 및 기업 경영 컨설팅 분야에서 인정받은 전문성을 바탕으로 고객의 사업 가치를 높이는 맞춤형 자문을 제공합니다.",
-    image: "https://ymipartners.co.kr/_assets/media/8780b84ad2f722c2841347bac2485771.jpg",
+    image: "assets/representative-lee.jpg",
     imageAlt: "이영목 YMI Partners 대표이사",
     imageCaption: "YMI Partners 대표이사 이영목",
     highlights: [
